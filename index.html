@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nicolas De La Cruz Villafaña | Ingeniero Informático</title>
+  <meta name="description"
+    content="Portafolio de TU NOMBRE: Ingeniería Informática especializada en Ciberseguridad, desarrollo web full-stack, redes y microcontroladores." />
+  <meta name="keywords"
+    content="ciberseguridad, desarrollo web, full-stack, FastAPI, PHP, MySQL, Kali Linux, redes, portafolio" />
+  <meta name="author" content="TU NOMBRE" />
+  <meta name="theme-color" content="#0a0e14" />
+  <meta property="og:title" content="TU NOMBRE | Ciberseguridad & Full-Stack" />
+  <meta property="og:description" content="Ingeniería Informática, Ciberseguridad y Desarrollo Web Full-Stack." />
+  <meta property="og:type" content="website" />
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡️</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <canvas id="matrix" aria-hidden="true"></canvas>
+
+  <header class="header" id="header">
+    <nav class="nav container" aria-label="Navegación principal">
+      <a href="#inicio" class="logo">&lt;<span>Nicolas De La Cruz Villafaña</span>/&gt;</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#inicio" class="nav-link">Inicio</a></li>
+        <li><a href="#sobre-mi" class="nav-link">Sobre mí</a></li>
+        <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+        <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+        <li><a href="#contacto" class="nav-link">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+        <div class="hero-inner">
+          <p class="hero-tag mono">$ whoami</p>
+          <h1>Hola, soy <span class="accent">Nicolas</span></h1>
+          <h2 class="hero-role mono"><span id="typed"></span><span class="cursor">|</span></h2>
+          <p class="hero-text">
+            Ingeniero Informático especializado en Ciberseguridad. Construyo aplicaciones web
+            full-stack seguras, redes y soluciones sobre microcontroladores.
+          </p>
+          <div class="hero-cta">
+            <a href="#proyectos" class="btn btn-primary">Ver proyectos</a>
+            <a href="#contacto" class="btn btn-outline">Contáctame</a>
+          </div>
+        </div>
+
+        <div class="hero-photo">
+          <div class="photo-frame">
+            <img src="fotocv.jpg.jpeg" alt="Foto de perfil de TU NOMBRE" width="320" height="320" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="sobre-mi">
+      <div class="container">
+        <h2 class="section-title reveal"><span class="mono">01.</span> Sobre mí</h2>
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>
+              Soy estudiante/profesional de <strong>Ingeniería Informática</strong> con enfoque en
+              <strong>Ciberseguridad</strong>. Me apasiona entender cómo funcionan los sistemas
+              por dentro para poder construirlos, protegerlos y auditarlos.
+            </p>
+            <p>
+              Desarrollo aplicaciones <strong>full-stack</strong> con bases de datos relacionales y
+              APIs REST, configuro redes con <strong>Cisco Packet Tracer</strong>, practico auditoría
+              básica en <strong>Kali Linux</strong> y programo microcontroladores en <strong>C</strong>.
+            </p>
+            <p>Mi objetivo: unir desarrollo, redes y seguridad para crear soluciones robustas de punta a punta.</p>
+          </div>
+          <div class="terminal reveal" aria-hidden="true">
+            <div class="terminal-bar"><i></i><i></i><i></i><span class="mono">perfil.sh</span></div>
+            <pre class="mono"><span class="g">$</span> cat perfil.json
+{
+  "carrera": "Ing. Informática",
+  "especialidad": "Ciberseguridad",
+  "stack": ["Web", "Redes", "Hardware"],
+  "estado": "Disponible"
+}
+<span class="g">$</span> _</pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="habilidades">
+      <div class="container">
+        <h2 class="section-title reveal"><span class="mono">02.</span> Habilidades</h2>
+        <div class="skills-grid">
+          <article class="skill-card reveal">
+            <div class="skill-icon">🌐</div>
+            <h3>Desarrollo Web</h3>
+            <ul class="tags">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript ES6+</li>
+              <li>PHP</li>
+              <li>FastAPI</li>
+              <li>Astro</li>
+              <li>APIs REST</li>
+            </ul>
+          </article>
+          <article class="skill-card reveal">
+            <div class="skill-icon">🛡️</div>
+            <h3>Ciberseguridad & Redes</h3>
+            <ul class="tags">
+              <li>Kali Linux</li>
+              <li>Terminal / CLI</li>
+              <li>Auditoría básica</li>
+              <li>Cisco Packet Tracer</li>
+              <li>Fundamentos de Ciberseguridad</li>
+            </ul>
+          </article>
+          <article class="skill-card reveal">
+            <div class="skill-icon">⚙️</div>
+            <h3>Hardware & Bases de Datos</h3>
+            <ul class="tags">
+              <li>C para microcontroladores</li>
+              <li>MySQL</li>
+              <li>Apache</li>
+              <li>XAMPP</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="proyectos">
+      <div class="container">
+        <h2 class="section-title reveal"><span class="mono">03.</span> Proyectos</h2>
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <span class="project-label mono">Web + BD</span>
+            <h3>Sitio dinámico con MySQL</h3>
+            <p>Aplicación web con PHP y MySQL: CRUD completo, autenticación y consultas preparadas contra inyección SQL.
+            </p>
+            <ul class="tags small">
+              <li>PHP</li>
+              <li>MySQL</li>
+              <li>Apache</li>
+              <li>XAMPP</li>
+            </ul>
+            <a href="https://github.com/tuusuario" target="_blank" rel="noopener noreferrer" class="project-link">Ver
+              código →</a>
+          </article>
+          <article class="project-card reveal">
+            <span class="project-label mono">Web + API</span>
+            <h3>Frontend consumiendo FastAPI</h3>
+            <p>Interfaz en JavaScript que consume una API REST en FastAPI con base de datos relacional y validación de
+              datos.</p>
+            <ul class="tags small">
+              <li>FastAPI</li>
+              <li>JavaScript</li>
+              <li>REST</li>
+              <li>MySQL</li>
+            </ul>
+            <a href="https://github.com/tuusuario" target="_blank" rel="noopener noreferrer" class="project-link">Ver
+              código →</a>
+          </article>
+          <article class="project-card reveal">
+            <span class="project-label mono">Full-Stack</span>
+            <h3>Plataforma web integrada</h3>
+            <p>Sitio con Astro y backend de API conectado a base de datos, con enfoque en rendimiento y buenas prácticas
+              de seguridad.</p>
+            <ul class="tags small">
+              <li>Astro</li>
+              <li>API REST</li>
+              <li>MySQL</li>
+              <li>HTML/CSS</li>
+            </ul>
+            <a href="https://github.com/tuusuario" target="_blank" rel="noopener noreferrer" class="project-link">Ver
+              código →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contacto">
+      <div class="container contact">
+        <h2 class="section-title reveal"><span class="mono">04.</span> Contacto</h2>
+        <p class="contact-text reveal">¿Tienes un proyecto o una oportunidad? Escríbeme, con gusto conversamos.</p>
+        <div class="contact-links reveal">
+          <a href="https://github.com/tuusuario" target="_blank" rel="noopener noreferrer" class="contact-item">
+            <span>🐙</span> GitHub <small class="mono">github.com/nickovilla8</small>
+          </a>
+          <a href="mailto:tucorreo@ejemplo.com" class="contact-item">
+            <span>✉️</span> Correo <small class="mono">ndelacruzvillafana@gmail.com</small>
+          </a>
+          <a href="tel:+520000000000" class="contact-item">
+            <span>📱</span> Teléfono <small class="mono">+52 7224938378 </small>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="mono">&copy; <span id="year"></span> Nicolas De La Cruz Villafaña · Hecho con HTML, CSS y JS</p>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Volver arriba">↑</button>
+  <script src="script.js"></script>
+</body>
+
+</html>
