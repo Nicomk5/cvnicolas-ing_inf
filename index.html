@@ -4,16 +4,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nicolas De La Cruz Villafaña | Ingeniero Informático</title>
+  <title>Portafolio de Tutoría | Nicolas De La Cruz Villafaña</title>
   <meta name="description"
-    content="Portafolio de TU NOMBRE: Ingeniería Informática especializada en Ciberseguridad, desarrollo web full-stack, redes y microcontroladores." />
-  <meta name="keywords"
-    content="ciberseguridad, desarrollo web, full-stack, FastAPI, PHP, MySQL, Kali Linux, redes, portafolio" />
-  <meta name="author" content="TU NOMBRE" />
+    content="Portafolio de Tutoría de Nicolas De La Cruz Villafaña: evidencias de desarrollo personal, académico y profesional." />
   <meta name="theme-color" content="#0a0e14" />
-  <meta property="og:title" content="TU NOMBRE | Ciberseguridad & Full-Stack" />
-  <meta property="og:description" content="Ingeniería Informática, Ciberseguridad y Desarrollo Web Full-Stack." />
-  <meta property="og:type" content="website" />
   <link rel="icon"
     href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌐</text></svg>" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -29,186 +23,30 @@
 
   <header class="header" id="header">
     <nav class="nav container" aria-label="Navegación principal">
-      <a href="#inicio" class="logo">&lt;<span>Nicolas De La Cruz Villafaña</span>/&gt;</a>
+      <a href="index.html#inicio" class="logo">&lt;<span>Nicolas De La Cruz Villafaña</span>/&gt;</a>
       <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
       <ul class="nav-menu" id="navMenu">
-        <li><a href="#inicio" class="nav-link">Inicio</a></li>
-        <li><a href="#sobre-mi" class="nav-link">Sobre mí</a></li>
-        <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
-        <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
-        <li><a href="#contacto" class="nav-link">Contacto</a></li>
+        <li><a href="index.html#inicio" class="nav-link">Inicio</a></li>
+        <li><a href="index.html#sobre-mi" class="nav-link">Sobre mí</a></li>
+        <li><a href="index.html#habilidades" class="nav-link">Habilidades</a></li>
+        <li><a href="index.html#proyectos" class="nav-link">Proyectos</a></li>
+        <li><a href="portafolio.html#/" class="nav-link active" aria-current="page">Portafolio</a></li>
+        <li><a href="index.html#contacto" class="nav-link">Contacto</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <section class="hero" id="inicio">
-      <div class="container hero-grid">
-        <div class="hero-inner">
-          <p class="hero-tag mono">$ portafolio-cv</p>
-          <h1>Hola, soy <span class="accent">Nicolas</span></h1>
-          <h2 class="hero-role mono"><span id="typed"></span><span class="cursor">|</span></h2>
-          <p class="hero-text">
-            Ingeniero Informático especializado en Ciberseguridad. Construyo aplicaciones web
-            full-stack seguras, redes y soluciones sobre microcontroladores.
-          </p>
-          <div class="hero-cta">
-            <a href="#proyectos" class="btn btn-primary">Ver proyectos</a>
-            <a href="#contacto" class="btn btn-outline">Contáctame</a>
-          </div>
+    <!-- Aquí portafolio.js dibuja la vista según la ruta: #/  ·  #/categoria  ·  #/categoria/actividad -->
+    <div class="pf-view" id="pf-root">
+      <noscript>
+        <div class="container">
+          <p>Activa JavaScript para ver el portafolio.</p>
         </div>
-
-        <div class="hero-photo">
-          <div class="photo-frame">
-            <img src="fotocv.jpg.jpeg" alt="Foto de perfil de TU NOMBRE" width="320" height="320" />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="sobre-mi">
-      <div class="container">
-        <h2 class="section-title reveal"><span class="mono">01.</span> Sobre mí</h2>
-        <div class="about-grid">
-          <div class="about-text reveal">
-            <p>
-              Soy estudiante/profesional de <strong>Ingeniería Informática</strong> con enfoque en
-              <strong>Ciberseguridad</strong>. Me apasiona entender cómo funcionan los sistemas
-              por dentro para poder construirlos, protegerlos y auditarlos.
-            </p>
-            <p>
-              Desarrollo aplicaciones <strong>full-stack</strong> con bases de datos relacionales y
-              APIs REST, configuro redes con <strong>Cisco Packet Tracer</strong>, practico auditoría
-              básica en <strong>Kali Linux</strong> y programo microcontroladores en <strong>C</strong>.
-            </p>
-            <p>Mi objetivo: unir desarrollo, redes y seguridad para crear soluciones robustas de punta a punta.</p>
-          </div>
-          <div class="terminal reveal" aria-hidden="true">
-            <div class="terminal-bar"><i></i><i></i><i></i><span class="mono">perfil.sh</span></div>
-            <pre class="mono"><span class="g">$</span> cat perfil.json
-{
-  "carrera": "Ing. Informática",
-  "especialidad": "Ciberseguridad",
-  "stack": ["Web", "Redes", "Hardware"],
-  "estado": "Disponible"
-}
-<span class="g">$</span> _</pre>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="habilidades">
-      <div class="container">
-        <h2 class="section-title reveal"><span class="mono">02.</span> Habilidades</h2>
-        <div class="skills-grid">
-          <article class="skill-card reveal">
-            <div class="skill-icon">🌐</div>
-            <h3>Desarrollo Web</h3>
-            <ul class="tags">
-              <li>HTML5</li>
-              <li>CSS3</li>
-              <li>JavaScript ES6+</li>
-              <li>PHP</li>
-              <li>FastAPI</li>
-              <li>Astro</li>
-              <li>APIs REST</li>
-            </ul>
-          </article>
-          <article class="skill-card reveal">
-            <div class="skill-icon">🛡️</div>
-            <h3>Ciberseguridad & Redes</h3>
-            <ul class="tags">
-              <li>Kali Linux</li>
-              <li>Terminal / CLI</li>
-              <li>Auditoría básica</li>
-              <li>Cisco Packet Tracer</li>
-              <li>Fundamentos de Ciberseguridad</li>
-            </ul>
-          </article>
-          <article class="skill-card reveal">
-            <div class="skill-icon">⚙️</div>
-            <h3>Hardware & Bases de Datos</h3>
-            <ul class="tags">
-              <li>C para microcontroladores</li>
-              <li>MySQL</li>
-              <li>Apache</li>
-              <li>XAMPP</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="proyectos">
-      <div class="container">
-        <h2 class="section-title reveal"><span class="mono">03.</span> Proyectos</h2>
-        <div class="projects-grid">
-          <article class="project-card reveal">
-            <span class="project-label mono">Web + BD</span>
-            <h3>Sitio dinámico con MySQL</h3>
-            <p>Aplicación web con PHP y MySQL: CRUD completo, autenticación y consultas preparadas contra inyección SQL.
-            </p>
-            <ul class="tags small">
-              <li>PHP</li>
-              <li>MySQL</li>
-              <li>Apache</li>
-              <li>XAMPP</li>
-            </ul>
-            <a href="https://github.com/Nicomk5" target="_blank" rel="noopener noreferrer" class="project-link">Ver
-              código →</a>
-          </article>
-          <article class="project-card reveal">
-            <span class="project-label mono">Web + API</span>
-            <h3>Frontend consumiendo FastAPI</h3>
-            <p>Interfaz en JavaScript que consume una API REST en FastAPI con base de datos relacional y validación de
-              datos.</p>
-            <ul class="tags small">
-              <li>FastAPI</li>
-              <li>JavaScript</li>
-              <li>REST</li>
-              <li>MySQL</li>
-            </ul>
-            <a href="https://github.com/tuusuario" target="_blank" rel="noopener noreferrer" class="project-link">Ver
-              código →</a>
-          </article>
-          <article class="project-card reveal">
-            <span class="project-label mono">Full-Stack</span>
-            <h3>Plataforma web integrada</h3>
-            <p>Sitio con Astro y backend de API conectado a base de datos, con enfoque en rendimiento y buenas prácticas
-              de seguridad.</p>
-            <ul class="tags small">
-              <li>Astro</li>
-              <li>API REST</li>
-              <li>MySQL</li>
-              <li>HTML/CSS</li>
-            </ul>
-            <a href="https://github.com/Nicom5" target="_blank" rel="noopener noreferrer" class="project-link">Ver
-              código →</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="contacto">
-      <div class="container contact">
-        <h2 class="section-title reveal"><span class="mono">04.</span> Contacto</h2>
-        <p class="contact-text reveal">¿Tienes un proyecto o una oportunidad? Escríbeme, con gusto conversamos.</p>
-        <div class="contact-links reveal">
-          <a href="https://github.com/tuusuario" target="_blank" rel="noopener noreferrer" class="contact-item">
-            <span>🐙</span> GitHub <small class="mono">github.com/nickovilla8</small>
-          </a>
-          <a href="mailto:tucorreo@ejemplo.com" class="contact-item">
-            <span>✉️</span> Correo <small class="mono">ndelacruzvillafana@gmail.com</small>
-          </a>
-          <a href="tel:+520000000000" class="contact-item">
-            <span>📱</span> Teléfono <small class="mono">+52 7224938378 </small>
-          </a>
-        </div>
-      </div>
-    </section>
+      </noscript>
+    </div>
   </main>
 
   <footer class="footer">
@@ -216,6 +54,341 @@
   </footer>
 
   <button class="to-top" id="toTop" aria-label="Volver arriba">↑</button>
+
+  <!-- ===================================================================
+       CONTENIDO DE LAS ACTIVIDADES
+       Cada actividad desarrollada vive en un <template> con id "tpl-<id>".
+       Para sumar una nueva: crea su template y, en portafolio.js, agrega
+       tpl: "tpl-<id>" a esa actividad.
+       =================================================================== -->
+  <template id="tpl-manejo-emocional">
+
+    <section class="pf-block reveal">
+      <h2 class="pf-h2"><span class="mono">01.</span> Introducción</h2>
+      <div class="pf-lead pf-text">
+        <p>El manejo emocional es una parte importante del desarrollo personal y académico, ya que permite reconocer
+          nuestras emociones, comprender qué situaciones las provocan y aprender a responder de una manera adecuada.</p>
+        <p>Durante mi formación como estudiante de Ingeniería Informática he identificado algunas situaciones académicas
+          que pueden generar frustración, presión e inseguridad. Analizarlas me permite reconocer aspectos que necesito
+          mejorar y desarrollar estrategias para afrontar de mejor manera los retos que se presentan durante mi
+          aprendizaje y trabajo en equipo.</p>
+      </div>
+    </section>
+
+    <section class="pf-block">
+      <h2 class="pf-h2 reveal"><span class="mono">02.</span> Análisis de situaciones académicas</h2>
+
+      <article class="pf-situation reveal">
+        <div class="pf-sit-head">
+          <span class="pf-sit-num mono">Situación 1</span>
+          <h3>Dificultad de concentración y aprendizaje</h3>
+        </div>
+        <span class="pf-label mono">Descripción</span>
+        <p class="pf-desc">Una de las dificultades que he identificado durante mi formación académica es mantener la
+          atención cuando se presentan temas teóricos demasiado extensos. En ocasiones, esto provoca que no logre
+          comprender completamente los contenidos. Esta situación también se refleja durante las actividades prácticas,
+          especialmente cuando debo realizar algún ejercicio y no cuento con los conocimientos suficientes para
+          desarrollarlo.</p>
+        <div class="pf-facts">
+          <div class="pf-fact emo"><span class="pf-label mono">Emociones</span>
+            <p>Frustración, confusión y desmotivación.</p>
+          </div>
+          <div class="pf-fact det"><span class="pf-label mono">Detonante</span>
+            <p>La extensión de los contenidos teóricos y la falta de comprensión de algunos conocimientos necesarios
+              para realizar las prácticas.</p>
+          </div>
+          <div class="pf-fact res"><span class="pf-label mono">Mi respuesta</span>
+            <p>Puedo perder la concentración, tener dificultades para avanzar y sentir frustración al no conseguir los
+              resultados esperados.</p>
+          </div>
+          <div class="pf-fact est"><span class="pf-label mono">Estrategia</span>
+            <p>Dividir los temas en pequeñas secciones, elaborar apuntes, identificar mis dudas y buscar ejemplos
+              prácticos que faciliten la comprensión.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="pf-situation reveal">
+        <div class="pf-sit-head">
+          <span class="pf-sit-num mono">Situación 2</span>
+          <h3>Presión por la responsabilidad en un equipo</h3>
+        </div>
+        <span class="pf-label mono">Descripción</span>
+        <p class="pf-desc">Cuando participo en proyectos o prototipos escolares y soy el encargado de desarrollar la
+          parte práctica, siento una responsabilidad importante por conseguir buenos resultados. Esto se vuelve
+          especialmente complicado cuando aparecen dificultades técnicas que impiden avanzar como esperaba, ya que
+          considero que el resultado de mi trabajo también influye en el desempeño de mis compañeros.</p>
+        <div class="pf-facts">
+          <div class="pf-fact emo"><span class="pf-label mono">Emociones</span>
+            <p>Estrés, presión e inseguridad.</p>
+          </div>
+          <div class="pf-fact det"><span class="pf-label mono">Detonante</span>
+            <p>Encontrarme con dificultades durante el desarrollo y sentir que debo cumplir con las expectativas del
+              equipo.</p>
+          </div>
+          <div class="pf-fact res"><span class="pf-label mono">Mi respuesta</span>
+            <p>Puedo preocuparme demasiado por los resultados y sentir presión al intentar resolver todos los problemas.
+            </p>
+          </div>
+          <div class="pf-fact est"><span class="pf-label mono">Estrategia</span>
+            <p>Organizar las tareas por prioridades, mantener la calma ante los errores, comunicar las dificultades y
+              solicitar apoyo cuando sea necesario.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="pf-situation reveal">
+        <div class="pf-sit-head">
+          <span class="pf-sit-num mono">Situación 3</span>
+          <h3>Evitar asumir el liderazgo</h3>
+        </div>
+        <span class="pf-label mono">Descripción</span>
+        <p class="pf-desc">En algunas actividades grupales he identificado que tengo la capacidad de participar como
+          líder y coordinar el trabajo de mis compañeros. Sin embargo, en ocasiones he preferido no asumir ese papel
+          debido a que implica tomar decisiones, organizar actividades y responsabilizarme de ciertos resultados. Esto
+          ha provocado que deje pasar oportunidades para desarrollar mis capacidades de liderazgo.</p>
+        <div class="pf-facts">
+          <div class="pf-fact emo"><span class="pf-label mono">Emociones</span>
+            <p>Inseguridad, duda y temor a equivocarme.</p>
+          </div>
+          <div class="pf-fact det"><span class="pf-label mono">Detonante</span>
+            <p>La responsabilidad que implica dirigir un equipo y tomar decisiones que pueden influir en el resultado
+              del trabajo.</p>
+          </div>
+          <div class="pf-fact res"><span class="pf-label mono">Mi respuesta</span>
+            <p>Prefiero mantenerme en un papel de integrante del equipo, aunque tenga la posibilidad de aportar más
+              desde una posición de liderazgo.</p>
+          </div>
+          <div class="pf-fact est"><span class="pf-label mono">Estrategia</span>
+            <p>Fortalecer mi confianza, aceptar responsabilidades progresivamente y comprender que liderar también
+              significa escuchar, colaborar y aprender de los errores.</p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="pf-block">
+      <h2 class="pf-h2 reveal"><span class="mono">03.</span> Aplicación de una estrategia de autorregulación</h2>
+      <div class="pf-selected reveal">
+        <div class="pf-fact det"><span class="pf-label mono">Situación seleccionada</span>
+          <p>Presión por la responsabilidad en un equipo.</p>
+        </div>
+        <div class="pf-fact est"><span class="pf-label mono">Estrategia</span>
+          <p>Organización y resolución progresiva de problemas.</p>
+        </div>
+      </div>
+      <div class="pf-text reveal">
+        <p>La estrategia consiste en evitar que la presión por conseguir resultados me impida pensar con claridad. Para
+          ello, propongo aplicar los siguientes pasos:</p>
+      </div>
+      <ol class="pf-steps">
+        <li class="reveal"><strong>Identificar el problema:</strong> reconocer qué parte del proyecto está presentando
+          dificultades.</li>
+        <li class="reveal"><strong>Organizar las tareas:</strong> dividir el problema en actividades más pequeñas y
+          establecer prioridades.</li>
+        <li class="reveal"><strong>Buscar alternativas:</strong> analizar diferentes maneras de solucionar el
+          inconveniente sin apresurarme.</li>
+        <li class="reveal"><strong>Comunicarme con el equipo:</strong> compartir los avances y dificultades para recibir
+          opiniones y apoyo.</li>
+        <li class="reveal"><strong>Evaluar los resultados:</strong> revisar qué funcionó y qué aspectos necesitan
+          mejorar.</li>
+      </ol>
+
+      <div class="pf-compare">
+        <div class="pf-col before reveal">
+          <h3>ANTES</h3>
+          <ul>
+            <li>Sentir que toda la responsabilidad depende de mí.</li>
+            <li>Preocuparme demasiado cuando algo no funciona.</li>
+            <li>Intentar resolver todo rápidamente.</li>
+            <li>Sentir presión por los resultados.</li>
+          </ul>
+        </div>
+        <div class="pf-col after reveal">
+          <h3>DESPUÉS <small>Resultado esperado</small></h3>
+          <ul>
+            <li>Reconocer que el proyecto es un esfuerzo colectivo.</li>
+            <li>Analizar el problema con mayor tranquilidad.</li>
+            <li>Dividir las dificultades y establecer prioridades.</li>
+            <li>Concentrarme en el proceso y la búsqueda de soluciones.</li>
+          </ul>
+        </div>
+      </div>
+      <p class="pf-note reveal"><strong>Aclaración:</strong> el apartado DESPUÉS representa los resultados esperados de
+        aplicar la estrategia, no una experiencia ya comprobada.</p>
+    </section>
+
+    <section class="pf-block reveal">
+      <h2 class="pf-h2"><span class="mono">04.</span> Reflexión individual</h2>
+      <div class="pf-quote pf-text">
+        <p>Al analizar estas situaciones, me doy cuenta de que el manejo emocional influye directamente en mi desempeño
+          académico y en la manera en que trabajo con otras personas. Reconozco que necesito mejorar mi concentración
+          cuando estudio temas teóricos, aprender a controlar la presión cuando tengo responsabilidades importantes y
+          tener mayor confianza para asumir el liderazgo dentro de un equipo. En situaciones similares, buscaré
+          organizar mejor mis actividades, tomar los problemas con mayor tranquilidad y no tener miedo de pedir apoyo
+          cuando sea necesario. También quiero aprovechar las oportunidades para desarrollar mis capacidades de
+          liderazgo, entendiendo que equivocarme forma parte del aprendizaje y que cada experiencia puede ayudarme a
+          mejorar tanto personal como académicamente.</p>
+      </div>
+    </section>
+
+    <section class="pf-block reveal">
+      <h2 class="pf-h2"><span class="mono">05.</span> Conclusión</h2>
+      <div class="pf-text">
+        <p>El desarrollo de esta actividad me permitió identificar algunas situaciones que pueden afectar mi desempeño
+          durante la formación académica y reconocer que no siempre reacciono de la mejor manera ante las dificultades.
+        </p>
+        <p>Comprendí que el manejo emocional no significa evitar los problemas o las emociones negativas, sino aprender
+          a reconocerlas y desarrollar herramientas para enfrentarlas. También considero importante fortalecer mi
+          confianza, mejorar mi organización y aprender a trabajar bajo presión sin olvidar que el trabajo en equipo
+          implica compartir responsabilidades.</p>
+        <p>Estos aprendizajes pueden ayudarme a desenvolverme mejor tanto en mis actividades académicas como en mi
+          futuro desarrollo profesional.</p>
+      </div>
+    </section>
+
+  </template>
+
+  <template id="tpl-creatividad">
+
+    <section class="pf-block reveal">
+      <h2 class="pf-h2"><span class="mono">01.</span> Información general</h2>
+      <div class="pf-selected">
+        <div class="pf-fact res"><span class="pf-label mono">Fecha</span>
+          <p>6 de noviembre de 2026</p>
+        </div>
+        <div class="pf-fact est"><span class="pf-label mono">Título de la actividad</span>
+          <p>Optimización de la distribución de salones en el edificio de Informática.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="pf-block reveal">
+      <h2 class="pf-h2"><span class="mono">02.</span> Contexto</h2>
+      <div class="pf-lead pf-text">
+        <p>En el edificio de Informática existe una sala de cómputo que utilizan diferentes grupos, principalmente
+          estudiantes de primer semestre que todavía no cuentan con computadora propia. Sin embargo, mi grupo de quinto
+          semestre tiene asignada esa sala como salón habitual, aunque la mayoría de mis compañeros cuenta con equipo
+          personal.</p>
+        <p>Cuando los grupos de primer semestre necesitan utilizar la sala, mi grupo debe trasladarse a otras aulas.
+          Esta organización genera cambios de salón durante la semana y no siempre permite aprovechar adecuadamente las
+          computadoras institucionales.</p>
+      </div>
+    </section>
+
+    <section class="pf-block reveal">
+      <h2 class="pf-h2"><span class="mono">03.</span> Problema observado</h2>
+      <div class="pf-text">
+        <p>La distribución actual de los salones no considera completamente las necesidades tecnológicas de cada grupo.
+          Esto provoca movimientos entre aulas y hace que algunos equipos institucionales permanezcan sin utilizarse
+          mientras otros estudiantes podrían necesitarlos.</p>
+      </div>
+    </section>
+
+    <section class="pf-block">
+      <h2 class="pf-h2 reveal"><span class="mono">04.</span> Tres ideas y criterio de selección</h2>
+      <p class="pf-text reveal">Se plantearon tres alternativas:</p>
+
+      <article class="pf-situation pf-idea selected reveal">
+        <div class="pf-sit-head">
+          <span class="pf-sit-num mono">Idea 1</span>
+          <h3>Redistribución estratégica de salones</h3>
+          <span class="pf-status ready mono">Propuesta seleccionada</span>
+        </div>
+        <p class="pf-desc">Asignar los espacios considerando las necesidades tecnológicas de cada grupo, dando
+          prioridad a la sala de cómputo para quienes necesitan utilizar los equipos institucionales.</p>
+      </article>
+
+      <article class="pf-situation pf-idea reveal">
+        <div class="pf-sit-head">
+          <span class="pf-sit-num mono">Idea 2</span>
+          <h3>Sistema digital de asignación de aulas</h3>
+        </div>
+        <p class="pf-desc">Crear una plataforma donde se puedan consultar los horarios, grupos y disponibilidad de los
+          salones.</p>
+      </article>
+
+      <article class="pf-situation pf-idea reveal">
+        <div class="pf-sit-head">
+          <span class="pf-sit-num mono">Idea 3</span>
+          <h3>Calendario de uso de la sala de cómputo</h3>
+        </div>
+        <p class="pf-desc">Organizar los horarios de utilización de la sala para evitar conflictos entre los grupos
+          que necesitan acceder a ella.</p>
+      </article>
+
+      <div class="pf-selected reveal">
+        <div class="pf-fact est"><span class="pf-label mono">Propuesta seleccionada</span>
+          <p>Redistribución estratégica de salones.</p>
+        </div>
+        <div class="pf-fact det"><span class="pf-label mono">Criterio de selección</span>
+          <p>Se eligió esta alternativa porque permite atender directamente el problema mediante una mejor organización
+            de los espacios existentes, sin depender de la construcción de nuevas instalaciones o de la implementación
+            de un sistema adicional.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="pf-block">
+      <h2 class="pf-h2 reveal"><span class="mono">05.</span> Prototipo</h2>
+      <figure class="pf-figure reveal">
+        <a href="prototipo.jpg" target="_blank" rel="noopener noreferrer"
+          aria-label="Abrir la imagen del prototipo en tamaño completo">
+          <img src="prototipo.jpg" alt="Prototipo de organización de espacios del edificio de Informática"
+            loading="lazy" decoding="async" onerror="this.closest('.pf-figure').classList.add('missing')" />
+        </a>
+        <p class="pf-missing">La imagen del prototipo no se pudo cargar.</p>
+        <figcaption class="mono">Prototipo visual · toca la imagen para verla en tamaño completo</figcaption>
+      </figure>
+      <div class="pf-text reveal">
+        <p>Este prototipo representa una propuesta de distribución de los espacios, considerando las necesidades de los
+          grupos y el aprovechamiento de los equipos institucionales.</p>
+      </div>
+      <p class="pf-note reveal"><strong>Aclaración:</strong> se trata de una propuesta académica sujeta a revisión y
+        autorización institucional. No ha sido implementada.</p>
+    </section>
+
+    <section class="pf-block">
+      <h2 class="pf-h2 reveal"><span class="mono">06.</span> Retroalimentación de un usuario</h2>
+      <p class="pf-text reveal">La opinión fue proporcionada por un alumno de quinto semestre que conoce la situación
+        actual.</p>
+      <div class="pf-quote pf-text reveal">
+        <p>El alumno comentó que sí existen cambios frecuentes de aula durante la semana. Explicó que algunos días el
+          grupo utiliza la sala de cómputo durante toda la jornada, mientras que otros días debe alternar entre un aula
+          convencional y su salón asignado.</p>
+        <p>También consideró conveniente que los grupos que todavía no cuentan con computadoras propias tengan
+          prioridad para utilizar la sala de cómputo, ya que los estudiantes de quinto semestre cuentan con equipo
+          personal y, en ocasiones, las computadoras institucionales ocupan espacio sin ser utilizadas.</p>
+        <p>Respecto a la propuesta, señaló que una mejor asignación de los salones podría ayudar a aprovechar la
+          capacidad de los equipos disponibles. Finalmente, recomendó revisar y reorganizar el rol de las aulas de
+          acuerdo con las necesidades de cada grupo.</p>
+      </div>
+      <div class="pf-lead pf-text reveal pf-conclusion">
+        <span class="pf-label mono">Conclusión de la retroalimentación</span>
+        <p>La opinión del alumno respalda la importancia de organizar los espacios considerando qué grupos necesitan
+          realmente los equipos institucionales. Además, aporta la recomendación de mejorar la distribución semanal de
+          las aulas para aprovechar mejor los recursos existentes.</p>
+      </div>
+    </section>
+
+    <section class="pf-block reveal">
+      <h2 class="pf-h2"><span class="mono">07.</span> Reflexión personal</h2>
+      <p class="pf-text"><span class="pf-label mono">¿Por qué crees que tu propuesta aporta valor?</span></p>
+      <div class="pf-quote pf-text">
+        <p>Al desarrollar esta actividad comprendí que la creatividad no consiste únicamente en inventar algo nuevo,
+          sino también en observar situaciones cotidianas e identificar oportunidades de mejora. En este caso, pude
+          reconocer que la distribución de los salones de nuestro edificio de Informática genera movimientos entre
+          grupos que podrían reducirse mediante una mejor organización. Considero que es importante tomar en cuenta las
+          necesidades de cada semestre, especialmente las de los estudiantes que todavía no cuentan con equipo propio.
+          Esta propuesta me permitió pensar en cómo aprovechar mejor los recursos que ya existen dentro de nuestra
+          institución. También aprendí que, antes de plantear una solución, es necesario analizar el problema,
+          considerar diferentes alternativas y escuchar las opiniones de otras personas.</p>
+      </div>
+    </section>
+
+  </template>
+
+  <script src="portafolio.js"></script>
   <script src="script.js"></script>
 </body>
 
