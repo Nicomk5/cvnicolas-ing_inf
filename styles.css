@@ -1240,3 +1240,344 @@ a {
 .pf-conclusion .pf-label {
   color: var(--green);
 }
+
+/* ===== ACTIVIDAD 3 ===== */
+.act3 {
+  --act3-bg-card: #111722;
+  --act3-accent: #39ff88;
+  --act3-text: #e6edf3;
+  --act3-muted: #9aa7b4;
+  --act3-border: rgba(57, 255, 136, 0.25);
+  padding: 4rem 1.25rem;
+  scroll-margin-top: 80px;
+}
+
+.act3__container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.act3__eje {
+  color: var(--act3-accent);
+  font-family: monospace;
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+  margin: 0 0 0.5rem;
+}
+
+.act3__title {
+  color: var(--act3-text);
+  margin: 0 0 2rem;
+  line-height: 1.25;
+}
+
+.act3-card {
+  background: var(--act3-bg-card);
+  border: 1px solid var(--act3-border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.75rem;
+  color: var(--act3-text);
+}
+
+.act3-card__label {
+  display: inline-block;
+  color: var(--act3-accent);
+  font-family: monospace;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.4rem;
+}
+
+.act3-card__header h3 {
+  margin: 0 0 1rem;
+  line-height: 1.3;
+}
+
+.act3-block {
+  margin-top: 1.1rem;
+}
+
+.act3-block h4 {
+  color: var(--act3-accent);
+  margin: 0 0 0.4rem;
+  font-size: 1rem;
+}
+
+.act3-block p {
+  color: var(--act3-muted);
+  line-height: 1.65;
+  margin: 0 0 0.6rem;
+}
+
+.act3-tags {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.act3-tags li {
+  border: 1px solid var(--act3-accent);
+  color: var(--act3-accent);
+  background: rgba(57, 255, 136, 0.08);
+  border-radius: 999px;
+  padding: 0.25rem 0.8rem;
+  font-size: 0.85rem;
+  font-family: monospace;
+}
+
+.act3-figure {
+  margin: 0;
+}
+
+.act3-zoom {
+  display: block;
+  padding: 0;
+  border: 1px solid var(--act3-border);
+  border-radius: 8px;
+  background: none;
+  cursor: zoom-in;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.act3-zoom img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  max-height: 420px;
+  object-fit: contain;
+}
+
+.act3-figure figcaption {
+  color: var(--act3-muted);
+  font-size: 0.8rem;
+  margin-top: 0.4rem;
+}
+
+.act3-pending {
+  color: var(--act3-muted);
+  font-style: italic;
+  margin: 0;
+}
+
+.act3-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  cursor: zoom-out;
+}
+
+.act3-lightbox[hidden] {
+  display: none;
+}
+
+.act3-lightbox img {
+  max-width: 95vw;
+  max-height: 90vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+.act3-lightbox__close {
+  position: absolute;
+  top: 1rem;
+  right: 1.25rem;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 2.2rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .act3-card {
+    padding: 2rem;
+  }
+}
+
+/* ===== Etiquetas de tecnologías (portafolio) ===== */
+.pf-tags {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0.4rem 0 1rem;
+  padding: 0;
+}
+
+.pf-tags li {
+  border: 1px solid #39ff88;
+  color: #39ff88;
+  background: rgba(57, 255, 136, 0.08);
+  border-radius: 999px;
+  padding: 0.25rem 0.8rem;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.85rem;
+}
+
+/* ===== Listas y tabla (actividad Emprendimiento) ===== */
+.pf-list-plain {
+  margin: 0.4rem 0 1rem;
+  padding-left: 1.2rem;
+  line-height: 1.7;
+}
+
+.pf-list-plain li {
+  margin-bottom: 0.3rem;
+}
+
+.pf-table-wrap {
+  overflow-x: auto;
+  margin: 1rem 0;
+  border: 1px solid rgba(57, 255, 136, 0.25);
+  border-radius: 10px;
+}
+
+.pf-table {
+  width: 100%;
+  min-width: 320px;
+  border-collapse: collapse;
+}
+
+.pf-table th,
+.pf-table td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.pf-table th {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #39ff88;
+  background: rgba(57, 255, 136, 0.06);
+}
+
+.pf-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.pf-table .pf-total td {
+  font-weight: 700;
+  color: #39ff88;
+}
+
+/* ===== Plan de carrera: tablas anchas, brechas y referencias ===== */
+.pf-table--wide {
+  min-width: 560px;
+}
+
+.pf-table--wide td {
+  vertical-align: top;
+}
+
+.pf-table .pf-gap-main td {
+  background: rgba(57, 255, 136, 0.06);
+}
+
+.pf-table .pf-gap-main td:first-child {
+  font-weight: 600;
+  color: #39ff88;
+}
+
+.pf-ref-list a {
+  color: #39ff88;
+  overflow-wrap: anywhere;
+}
+
+/* ===== Relaciones industriales: tarjeta del documento (PDF) ===== */
+.pf-link {
+  color: #39ff88;
+  overflow-wrap: anywhere;
+}
+
+.pf-doc {
+  border: 1px solid rgba(57, 255, 136, 0.45);
+  border-radius: 14px;
+  padding: 1.25rem;
+  background: linear-gradient(145deg, rgba(57, 255, 136, 0.08), rgba(255, 255, 255, 0.02));
+  box-shadow: 0 0 24px rgba(57, 255, 136, 0.12);
+}
+
+.pf-doc__head {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.9rem;
+}
+
+.pf-doc__icon {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.pf-doc__title {
+  margin: 0 0 0.3rem;
+}
+
+.pf-doc__desc {
+  margin: 0;
+  opacity: 0.85;
+}
+
+.pf-doc__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 1rem 0;
+}
+
+.pf-doc__actions .btn {
+  text-align: center;
+}
+
+.pf-doc__viewer {
+  border: 1px solid rgba(57, 255, 136, 0.3);
+  border-radius: 10px;
+  overflow: hidden;
+  background: #0a0e14;
+}
+
+.pf-doc__viewer iframe {
+  display: block;
+  width: 100%;
+  height: clamp(420px, 75vh, 860px);
+  border: 0;
+}
+
+.pf-doc__fallback {
+  margin: 0.75rem 0 0;
+  font-size: 0.85rem;
+  opacity: 0.85;
+}
+
+.pf-doc__fallback a {
+  color: #39ff88;
+}
+
+@media (max-width: 600px) {
+  .pf-doc {
+    padding: 1rem;
+  }
+
+  .pf-doc__actions .btn {
+    flex: 1 1 100%;
+  }
+
+  .pf-doc__viewer iframe {
+    height: min(70vh, 560px);
+  }
+}
