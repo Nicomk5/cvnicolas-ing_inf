@@ -386,6 +386,234 @@
       </div>
     </section>
 
+    <!-- ===== ACTIVIDAD 3: MIS PROYECTOS DE SOFTWARE Y PROTOTIPOS ===== -->
+    <section id="actividad-3" class="act3">
+      <div class="act3__container">
+        <p class="act3__eje">Eje: Aprendizaje y proyectos</p>
+        <h2 class="act3__title">Actividad 3. Mis proyectos de software y prototipos</h2>
+
+        <!-- PROYECTO 1 -->
+        <article class="act3-card">
+          <header class="act3-card__header">
+            <span class="act3-card__label">Proyecto 1</span>
+            <h3>Control y Análisis de Consumo Energético para los Hogares</h3>
+          </header>
+
+          <div class="act3-block">
+            <h4>Descripción</h4>
+            <p>Desarrollo de un sistema de monitoreo energético orientado al análisis del consumo eléctrico en los
+              hogares mediante tecnología IoT. El prototipo obtiene mediciones de corriente eléctrica, procesa la
+              información y transmite los datos a una plataforma digital para su almacenamiento, consulta y
+              visualización.</p>
+          </div>
+
+          <div class="act3-block">
+            <h4>Desarrollo</h4>
+            <p>Se utilizó una placa ESP32, un sensor de corriente y una pantalla LCD de 16x2 con comunicación I2C. Se
+              implementó la lectura y procesamiento de señales mediante EmonLib. Posteriormente, se incorporó
+              conectividad Wi-Fi para transmitir las mediciones a Google Apps Script y almacenarlas automáticamente en
+              Google Sheets.</p>
+            <p>También se desarrolló un panel web con HTML, CSS, JavaScript y Chart.js para visualizar gráficamente los
+              registros y consultar las mediciones recientes.</p>
+          </div>
+
+          <div class="act3-block">
+            <h4>Tecnologías</h4>
+            <ul class="act3-tags">
+              <li>ESP32 y sensor de corriente</li>
+              <li>LCD 16x2 con I2C</li>
+              <li>C++ y EmonLib</li>
+              <li>Wi-Fi e IoT</li>
+              <li>Google Apps Script y Google Sheets</li>
+              <li>HTML, CSS, JavaScript y Chart.js</li>
+            </ul>
+          </div>
+
+          <div class="act3-block">
+            <h4>Resultados</h4>
+            <p>Se obtuvo un prototipo funcional capaz de recopilar, transmitir, almacenar y visualizar mediciones
+              eléctricas. Se fortalecieron conocimientos de electrónica, microcontroladores, comunicación inalámbrica,
+              servicios en la nube y desarrollo web.</p>
+          </div>
+
+          <div class="act3-block">
+            <h4>Evidencia</h4>
+            <figure class="act3-figure">
+              <button type="button" class="act3-zoom js-act3-zoom" aria-label="Ampliar imagen de evidencia">
+                <img src="ev_sensor.jpg"
+                  alt="Evidencia del prototipo de monitoreo energético con ESP32 y sensor de corriente" loading="lazy">
+              </button>
+              <figcaption>Haz clic en la imagen para ampliarla.</figcaption>
+            </figure>
+          </div>
+        </article>
+
+        <!-- PROYECTO 2 -->
+        <article class="act3-card">
+          <header class="act3-card__header">
+            <span class="act3-card__label">Proyecto 2</span>
+            <h3>Sistema Web de Gestión de Vacantes para Programadores</h3>
+          </header>
+
+          <div class="act3-block">
+            <h4>Descripción</h4>
+            <p>Desarrollo de una plataforma web para consultar y administrar ofertas laborales dirigidas al área de
+              programación y desarrollo de software, permitiendo registrar, actualizar, eliminar y consultar vacantes
+              mediante una interfaz gráfica.</p>
+          </div>
+
+          <div class="act3-block">
+            <h4>Desarrollo</h4>
+            <p>Se implementó un módulo de inicio de sesión y un panel de administración desde el cual se pueden
+              registrar nuevas vacantes, editar información existente y eliminar registros.</p>
+            <p>También se integró una API de conversión de divisas para convertir cantidades de pesos mexicanos (MXN) a
+              dólares estadounidenses (USD) y euros (EUR).</p>
+            <p>Se desarrolló un apartado de estadísticas utilizando Chart.js y se trabajó en la publicación del proyecto
+              mediante GitHub y Vercel.</p>
+          </div>
+
+          <div class="act3-block">
+            <h4>Tecnologías</h4>
+            <ul class="act3-tags">
+              <li>HTML5, CSS3 y JavaScript</li>
+              <li>Chart.js</li>
+              <li>API de conversión de divisas</li>
+              <li>Git y GitHub</li>
+              <li>Vercel</li>
+            </ul>
+          </div>
+
+          <div class="act3-block">
+            <h4>Resultados</h4>
+            <p>Se obtuvo una plataforma funcional para administrar ofertas laborales, integrando autenticación, gestión
+              de información, consumo de APIs, visualización de datos y publicación web.</p>
+          </div>
+
+          <div class="act3-block">
+            <h4>Evidencia</h4>
+            <p class="act3-pending">Por el momento no se cuenta con capturas de pantalla de este proyecto.</p>
+          </div>
+        </article>
+
+        <!-- REFLEXIÓN INDIVIDUAL (PENDIENTE) -->
+        <article class="act3-card act3-card--reflexion">
+          <header class="act3-card__header">
+            <span class="act3-card__label">Reflexión individual</span>
+            <h3>Reflexión de la actividad</h3>
+          </header>
+          <!-- Cuando la tengas, reemplaza el párrafo "act3-pending" por: <p>Tu reflexión de 100 a 150 palabras</p> -->
+          <p class="act3-pending">Pendiente: reflexión individual de 100 a 150 palabras.</p>
+        </article>
+      </div>
+
+      <!-- VISOR PARA AMPLIAR LA IMAGEN -->
+      <div class="act3-lightbox" id="act3-lightbox" role="dialog" aria-modal="true" aria-label="Imagen ampliada" hidden>
+        <button type="button" class="act3-lightbox__close" aria-label="Cerrar">&times;</button>
+        <img src="" alt="">
+      </div>
+    </section>
+
+  </template>
+
+  <template id="tpl-proyectos-software">
+
+    <section class="pf-block">
+      <h2 class="pf-h2 reveal"><span class="mono">01.</span> Proyectos de software y prototipos</h2>
+
+      <!-- PROYECTO 1 -->
+      <article class="pf-situation reveal">
+        <div class="pf-sit-head">
+          <span class="pf-sit-num mono">Proyecto 1</span>
+          <h3>Control y Análisis de Consumo Energético para los Hogares</h3>
+        </div>
+
+        <span class="pf-label mono">Descripción</span>
+        <p class="pf-desc">Desarrollo de un sistema de monitoreo energético orientado al análisis del consumo eléctrico
+          en los hogares mediante tecnología IoT. El prototipo obtiene mediciones de corriente eléctrica, procesa la
+          información y transmite los datos a una plataforma digital para su almacenamiento, consulta y visualización.
+        </p>
+
+        <span class="pf-label mono">Desarrollo</span>
+        <p class="pf-desc">Se utilizó una placa ESP32, un sensor de corriente y una pantalla LCD de 16x2 con
+          comunicación I2C. Se implementó la lectura y procesamiento de señales mediante EmonLib. Posteriormente, se
+          incorporó conectividad Wi-Fi para transmitir las mediciones a Google Apps Script y almacenarlas
+          automáticamente en Google Sheets.</p>
+        <p class="pf-desc">También se desarrolló un panel web con HTML, CSS, JavaScript y Chart.js para visualizar
+          gráficamente los registros y consultar las mediciones recientes.</p>
+
+        <span class="pf-label mono">Tecnologías</span>
+        <ul class="pf-tags">
+          <li>ESP32 y sensor de corriente</li>
+          <li>LCD 16x2 con I2C</li>
+          <li>C++ y EmonLib</li>
+          <li>Wi-Fi e IoT</li>
+          <li>Google Apps Script y Google Sheets</li>
+          <li>HTML, CSS, JavaScript y Chart.js</li>
+        </ul>
+
+        <span class="pf-label mono">Resultados</span>
+        <p class="pf-desc">Se obtuvo un prototipo funcional capaz de recopilar, transmitir, almacenar y visualizar
+          mediciones eléctricas. Se fortalecieron conocimientos de electrónica, microcontroladores, comunicación
+          inalámbrica, servicios en la nube y desarrollo web.</p>
+
+        <span class="pf-label mono">Evidencia</span>
+        <figure class="pf-figure">
+          <a href="ev_sensor.jpg" target="_blank" rel="noopener noreferrer"
+            aria-label="Abrir la imagen de evidencia en tamaño completo">
+            <img src="ev_sensor.jpg"
+              alt="Evidencia del prototipo de monitoreo energético con ESP32 y sensor de corriente" loading="lazy"
+              decoding="async" onerror="this.closest('.pf-figure').classList.add('missing')" />
+          </a>
+          <p class="pf-missing">La imagen de evidencia no se pudo cargar.</p>
+          <figcaption class="mono">Evidencia del prototipo · toca la imagen para verla en tamaño completo</figcaption>
+        </figure>
+      </article>
+
+      <!-- PROYECTO 2 -->
+      <article class="pf-situation reveal">
+        <div class="pf-sit-head">
+          <span class="pf-sit-num mono">Proyecto 2</span>
+          <h3>Sistema Web de Gestión de Vacantes para Programadores</h3>
+        </div>
+
+        <span class="pf-label mono">Descripción</span>
+        <p class="pf-desc">Desarrollo de una plataforma web para consultar y administrar ofertas laborales dirigidas al
+          área de programación y desarrollo de software, permitiendo registrar, actualizar, eliminar y consultar
+          vacantes mediante una interfaz gráfica.</p>
+
+        <span class="pf-label mono">Desarrollo</span>
+        <p class="pf-desc">Se implementó un módulo de inicio de sesión y un panel de administración desde el cual se
+          pueden registrar nuevas vacantes, editar información existente y eliminar registros.</p>
+        <p class="pf-desc">También se integró una API de conversión de divisas para convertir cantidades de pesos
+          mexicanos (MXN) a dólares estadounidenses (USD) y euros (EUR).</p>
+        <p class="pf-desc">Se desarrolló un apartado de estadísticas utilizando Chart.js y se trabajó en la
+          publicación del proyecto mediante GitHub y Vercel.</p>
+
+        <span class="pf-label mono">Tecnologías</span>
+        <ul class="pf-tags">
+          <li>HTML5, CSS3 y JavaScript</li>
+          <li>Chart.js</li>
+          <li>API de conversión de divisas</li>
+          <li>Git y GitHub</li>
+          <li>Vercel</li>
+        </ul>
+
+        <span class="pf-label mono">Resultados</span>
+        <p class="pf-desc">Se obtuvo una plataforma funcional para administrar ofertas laborales, integrando
+          autenticación, gestión de información, consumo de APIs, visualización de datos y publicación web.</p>
+
+        <span class="pf-label mono">Evidencia</span>
+        <p class="pf-desc">Por el momento no se cuenta con capturas de pantalla de este proyecto.</p>
+      </article>
+    </section>
+
+    <section class="pf-block reveal">
+      <h2 class="pf-h2"><span class="mono">02.</span> Reflexión individual</h2>
+      <!-- Cuando la tengas (100 a 150 palabras), reemplaza el <p class="pf-note"> por:
+           <div class="pf-quote pf-text"><p>Tu reflexión aquí</p></div> -->
+      <p class="pf-note"><strong>Pendiente:</strong> reflexión individual de 100 a 150 palabras.</p>
+    </section>
+
   </template>
 
   <script src="portafolio.js"></script>
