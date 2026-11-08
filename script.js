@@ -110,3 +110,37 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 60);
   }
 });
+// ===== ACTIVIDAD 3: ampliar imagen de evidencia =====
+document.addEventListener('DOMContentLoaded', function () {
+  var lightbox = document.getElementById('act3-lightbox');
+  if (!lightbox) return;
+
+  var lightboxImg = lightbox.querySelector('img');
+  var closeBtn = lightbox.querySelector('.act3-lightbox__close');
+
+  function openLightbox(src, alt) {
+    lightboxImg.src = src;
+    lightboxImg.alt = alt || '';
+    lightbox.hidden = false;
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeLightbox() {
+    lightbox.hidden = true;
+    lightboxImg.src = '';
+    document.body.style.overflow = '';
+  }
+
+  document.querySelectorAll('.js-act3-zoom').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var img = btn.querySelector('img');
+      openLightbox(img.src, img.alt);
+    });
+  });
+
+  lightbox.addEventListener('click', closeLightbox);
+  closeBtn.addEventListener('click', closeLightbox);
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && !lightbox.hidden) closeLightbox();
+  });
+});
