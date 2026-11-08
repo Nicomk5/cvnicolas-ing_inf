@@ -50,8 +50,20 @@
             accent: "cyan",
             desc: "Evidencias de mis proyectos de software y prototipos, y de mi trabajo en emprendimiento social y económico.",
             activities: [
-                { id: "proyectos-software", title: "Mis proyectos de software y prototipos", icon: "💻" },
-                { id: "emprendimiento", title: "Emprendimiento social y económico", icon: "📈" }
+                {
+                    id: "proyectos-software",
+                    title: "Mis proyectos de software y prototipos",
+                    icon: "💻",
+                    tpl: "tpl-proyectos-software",
+                    summary: "Control y análisis de consumo energético para los hogares y sistema web de gestión de vacantes para programadores."
+                },
+                {
+                    id: "emprendimiento",
+                    title: "Emprendimiento social y económico",
+                    icon: "📈",
+                    tpl: "tpl-emprendimiento",
+                    summary: "NegocioFácil: propuesta de plataforma web, en etapa de planificación, para administrar productos, inventario y ventas de pequeños negocios."
+                }
             ]
         },
         {
@@ -61,8 +73,20 @@
             accent: "violet",
             desc: "Evidencias de mi plan de carrera y de mis relaciones industriales.",
             activities: [
-                { id: "plan-carrera", title: "Plan de carrera", icon: "🗺️" },
-                { id: "relaciones-industriales", title: "Relaciones industriales", icon: "🤝" }
+                {
+                    id: "plan-carrera",
+                    title: "Plan de carrera",
+                    icon: "🗺️",
+                    tpl: "tpl-plan-carrera",
+                    summary: "Ruta de carrera en desarrollo de software y ciberseguridad: competencias, mapa de brechas de habilidades y plan de formación de seis meses."
+                },
+                {
+                    id: "relaciones-industriales",
+                    title: "Relaciones industriales",
+                    icon: "🤝",
+                    tpl: "tpl-relaciones-industriales",
+                    summary: "Propuesta de acercamiento a PI Automation para una visita académica o charla técnica sobre automatización industrial."
+                }
             ]
         }
     ];
